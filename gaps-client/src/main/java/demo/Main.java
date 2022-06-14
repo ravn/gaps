@@ -1,16 +1,6 @@
 package demo;
 
 import gaps.Gaps;
-import org.eclipse.jgit.lib.Constants;
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.lib.StoredConfig;
-import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.revwalk.RevWalk;
-import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
-
-import java.io.File;
-import java.util.Date;
 
 @Gaps // This triggers the generation of MainGaps.
 public class Main {
@@ -20,7 +10,8 @@ public class Main {
         System.out.println(MainGaps.GIT_AUTHOR_EMAIL);
         System.out.println(MainGaps.GIT_AUTHOR_DATE);
         System.out.println(MainGaps.GIT_MESSAGE);
-        MainGaps.GIT_REMOTES.forEach((k,v) -> System.out.println(k + " -> " + v));
+        MainGaps.GIT_REMOTES.forEach(
+                (k, v) -> System.out.println(k + " -> " + v)
+        );
     }
-
 }
