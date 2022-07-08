@@ -49,7 +49,7 @@ Sample run:
 
 ```commandline
 mvn clean install
-mvn -q -pl gaps-client exec:java
+mvn -q -pl gaps-example exec:java
 ```
 
 For a given class `bar.Foo`, annotate it with `@gaps` to have `bar.FooGaps` automatically

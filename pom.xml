@@ -17,6 +17,6 @@
 
     <modules>
         <module>gaps-processor</module>
-        <module>gaps-client</module>
+        <module>gaps-example</module>
     </modules>
 </project>

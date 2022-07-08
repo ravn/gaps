@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.users.ravn.gaps</groupId>
-    <artifactId>gaps-client</artifactId>
+    <artifactId>gaps-example</artifactId>
     <packaging>jar</packaging>
     <version>0.0-SNAPSHOT</version>
 
@@ -16,6 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <exec.mainClass>demo.Main</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -28,7 +29,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.32</version>
+            <version>1.7.36</version>
         </dependency>
 
     </dependencies>
@@ -36,6 +37,8 @@
     <name>Git As Plain Source - client</name>
 
     <build>
+                <!-- https://www.mojohaus.org/exec-maven-plugin/usage.html -->
+            <!--
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -53,5 +56,6 @@
                 </configuration>
             </plugin>
         </plugins>
+        -->
     </build>
 </project>
